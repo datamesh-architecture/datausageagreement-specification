@@ -1,0 +1,127 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "DataUsageAgreementSpecification",
+  "properties": {
+    "dataUsageAgreementSpecification": {
+      "type": "string",
+      "title": "DataUsageAgreementSpecificationVersion",
+      "description": "Specifies the Data Usage Agreement Specification being used.",
+      "enum": [
+        "0.0.1"
+      ]
+    },
+    "id": {
+      "type": "string",
+      "description": "Specifies the identifier of the data usage agreement."
+    },
+    "info": {
+      "type": "object",
+      "properties": {
+        "purpose": {
+          "type": "string",
+          "description": "The purpose of the data usage agreement."
+        },
+        "status": {
+          "type": "string",
+          "description": "The status of the data usage agreement.",
+          "enum": [
+            "requested",
+            "approved",
+            "rejected"
+          ]
+        },
+        "active": {
+          "type": "boolean",
+          "description": "Indicates if the agreement is currently active."
+        },
+        "startDate": {
+          "type": "string",
+          "format": "date",
+          "description": "The start date of the data usage agreement."
+        },
+        "endDate": {
+          "type": "string",
+          "format": "date",
+          "description": "The end date of the data usage agreement."
+        },
+        "individualAgreements": {
+          "type": "string",
+          "description": "Individual agreements related to the data usage agreement."
+        }
+      },
+      "required": [
+        "purpose",
+        "status",
+        "startDate"
+      ]
+    },
+    "provider": {
+      "type": "object",
+      "properties": {
+        "teamId": {
+          "type": "string",
+          "description": "The ID of the provider team."
+        },
+        "dataProductId": {
+          "type": "string",
+          "description": "The ID of the provider data product."
+        },
+        "outputPortId": {
+          "type": "string",
+          "description": "The ID of the output port."
+        },
+        "dataContractId": {
+          "type": "string",
+          "description": "The ID of the data contract."
+        }
+      },
+      "required": [
+        "teamId",
+        "dataProductId",
+        "outputPortId"
+      ]
+    },
+    "consumer": {
+      "type": "object",
+      "properties": {
+        "teamId": {
+          "type": "string",
+          "description": "The ID of the consumer team."
+        },
+        "dataProductId": {
+          "type": "string",
+          "description": "The ID of the consumer data product."
+        },
+        "userId": {
+          "type": "string",
+          "description": "The ID of the consumer user."
+        }
+      }
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Tags associated with the data usage agreement."
+    },
+    "links": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "custom": {
+      "type": "object",
+      "additionalProperties": true
+    }
+  },
+  "required": [
+    "dataUsageAgreementSpecification",
+    "id",
+    "info",
+    "provider",
+    "consumer"
+  ]
+}
