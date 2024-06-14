@@ -1,0 +1,5 @@
+plugins:
+  - jekyll-sitemap
+markdown: kramdown
+name: "Data Usage Agreement Specification"
+title: "Data Usage Agreement Specification"
