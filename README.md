@@ -36,7 +36,19 @@ custom:
 
 We currently offer the specification in form of a JSON Schema [datausageagreement.schema.json](datausageagreement.schema.json).
 
-### Consumer Types
+### Provider
+
+The specification supports the output port of a data product as a provider
+
+```yaml
+provider:
+  teamId: checkout
+  dataProductId: orders
+  outputPortId: orders_pii_v1_snowflake
+  dataContractId: orders_pii_v1 # optional
+```
+
+### Consumer
 
 The specification supports three different consumer types:
 
@@ -44,7 +56,7 @@ The specification supports three different consumer types:
 - team (give a team access to data)
 - user (give a single user access to data)
 
-#### dataproduct
+#### Data Product
 
 ```yaml
 consumer:
@@ -52,14 +64,14 @@ consumer:
   dataProductId: realtime_user_classification
 ```
 
-#### team
+#### Team
 
 ```yaml
 consumer:
   teamId: marketing
 ```
 
-#### user
+#### User
 
 ```yaml
 consumer:
