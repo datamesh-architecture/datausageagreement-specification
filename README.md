@@ -44,6 +44,14 @@ custom:
 
 We currently offer the specification in form of a JSON Schema [datausageagreement.schema.json](datausageagreement.schema.json).
 
+### Info
+
+- Purpose: string
+- Status: requested, approved, rejected
+- Active: true, false
+- Start Date: date
+- End Date: date (optional)
+
 ### Provider
 
 The specification supports the output port of a data product as a provider. The data contract is optional but recommended.
