@@ -27,6 +27,8 @@ consumer:
   dataProductId: realtime_user_classification
 tags:
 - automated
+links:
+  aws: https://example.com/aws-role
 custom:
   platformRole: arn:aws:iam::123456789012:role/agreement-8f237f9h
   platformRoleCreatedAt: 2024-01-01T13:00:00Z
