@@ -17,6 +17,7 @@ info:
   active: true
   startDate: 2024-01-01
   endDate: null
+  individualAgreements: null
 provider:
   teamId: checkout
   dataProductId: orders
