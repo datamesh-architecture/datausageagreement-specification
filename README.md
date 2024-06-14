@@ -22,6 +22,7 @@ provider:
   teamId: checkout
   dataProductId: orders
   outputPortId: orders_pii_v1_snowflake
+  dataContractId: orders_pii_v1
 consumer:
   teamId: marketing
   dataProductId: realtime_user_classification
@@ -41,7 +42,7 @@ We currently offer the specification in form of a JSON Schema [datausageagreemen
 
 ### Provider
 
-The specification supports the output port of a data product as a provider
+The specification supports the output port of a data product as a provider. The data contract is optional but recommended.
 
 ```yaml
 provider:
