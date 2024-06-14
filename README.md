@@ -1,6 +1,6 @@
 # Data Usage Agreement Specification
 
-The Data Usage Agreement Specification is an open initiative to define a common data usage agreement format. It can be used on its own, or in combination with the [Data Contract Specification](datacontract.com).
+The Data Usage Agreement Specification is an open initiative to define a common data usage agreement format. It can be used on its own, or in combination with the [Data Contract Specification](datacontract.com) and the [Data Product Specification](dataproduct-specification.com).
 
 ## Version
 
