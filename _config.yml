@@ -3,3 +3,4 @@ plugins:
 markdown: kramdown
 name: "Data Usage Agreement Specification"
 title: "Data Usage Agreement Specification"
+description: A data usage agreement is a 1:1 relation between a data provider and a data consumer. It defines the purpose, status, and lifecycle of the agreement.
