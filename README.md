@@ -1,8 +1,8 @@
 # Data Usage Agreement Specification
 
-The Data Usage Agreement Specification is an open initiative to define a common data usage agreement format. It can be used on its own, or in combination with the [Data Contract Specification](datacontract.com) and the [Data Product Specification](dataproduct-specification.com).
+The Data Usage Agreement Specification is an open initiative to define a common data usage agreement format. It can be used on its own, or in combination with the [Data Contract Specification](https://datacontract.com) and the [Data Product Specification](https://dataproduct-specification.com).
 
-A data usage agreement is a 1:1 relation between a data provider and a data consumer. It defines the purpose, status, and lifecycle of the agreement. A [data contract](datacontract.com) can be part of an agreement.
+A data usage agreement is a 1:1 relation between a data provider and a data consumer. It defines the purpose, status, and lifecycle of the agreement. A [data contract](https://datacontract.com) can be part of an agreement.
 
 A data usage agreement enables you to always know who is using what data and why. You can use agreements as input for automatically granting or revoking access in the platform, and store the current automation state in the agreement
 
